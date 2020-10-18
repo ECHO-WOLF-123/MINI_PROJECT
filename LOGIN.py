@@ -14,7 +14,7 @@ def Frame_Login():
     frame.grid(padx=300, pady=125)
 
     # User-Name Index 
-    UserName_label = Label(frame, text="    Name:*", padx=2, pady=5).grid(row=0,column=0, padx=1, pady=5)
+    UserName_label = Label(frame, text="UserName:*", padx=2, pady=5).grid(row=0,column=0, padx=1, pady=5)
     E = Entry(frame, width=50, borderwidth=3)
     E.grid(row=0, column=1, columnspan=3, padx=10, pady=10)
 
