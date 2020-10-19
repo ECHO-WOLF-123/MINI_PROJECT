@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+from PIL import ImageTk, Image
 
 
 def loginmessage():
@@ -9,9 +10,12 @@ def loginmessage():
 def Frame_Login():
     root = Tk()
     root.title("Passport Application")
+    root.iconbitmap("D:/GIT_PROJECT/MINI_PROJECT/images/ico/flight.ico")
+    img = ImageTk.PhotoImage(Image.open("D:/GIT_PROJECT/MINI_PROJECT/images/flight.png"))
+    my_img = Label(image=img).grid()
 
-    frame = LabelFrame(root, padx=100, pady=100)
-    frame.grid(padx=300, pady=125)
+    frame = LabelFrame(root, padx=50, pady=150)
+    frame.grid(padx=200, pady=110)
 
     # User-Name Index 
     UserName_label = Label(frame, text="UserName:*", padx=2, pady=5).grid(row=0,column=0, padx=1, pady=5)
